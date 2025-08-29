@@ -37,12 +37,3 @@ public class Student {
 		return "Student [studentId=" + studentId + ", name=" + name + "]";
 	}
 }
-
-//I have student class i have an id
-// But how to create the object 
-// How to give the id value to the values 
-//1. using the property -- 
-//  it calls setter setter to set value 
-//2. Constructor - arg tag --- it calls constructor to set value
-
-// we has to write only one object ok ...
