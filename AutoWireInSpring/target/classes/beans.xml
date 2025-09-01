@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <!-- 1st byType 
+    
+    <bean id="st" class="com.Student" autowire="byType">
+        <property name="studentId" value="1"></property>
+        <property name="name" value="sai"></property>
+    </bean> -->
+    
+    <!--  2nd byName - the fieldName of the dependency and the id should be same here .. then it gives no error 
+    <bean id="st" class="com.Student" autowire="byName">
+        <property name="studentId" value="1"></property>
+        <property name="name" value="sai"></property>
+    </bean>
+     -->
+    
+    <bean id="st" class="com.Student" autowire="constructor">
+        <constructor-arg index="0" name="id" value="1"></constructor-arg>
+        <constructor-arg index="1" name="name" value="sai"></constructor-arg>
+    </bean>
+    
+     <bean id="address" class="com.Address">
+     	<constructor-arg name="addrId" value="100"></constructor-arg>
+     	<constructor-arg name="street" value="HitechCity"></constructor-arg>
+    </bean>
+    
+    
+</beans>
