@@ -5,7 +5,23 @@
        xsi:schemaLocation="
            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-    
+
+
+    <!-- Dependency Injection 
+       <bean id="st" class="com.Student" >
+               <property name="studentId" value="1"></property>
+               <property name="name" value="sai"></property>
+              <property name="address" ref="address"></property>
+        </bean>
+
+        <bean id="address" class="com.Address">
+            	<constructor-arg name="addrId" value="100"></constructor-arg>
+            	<constructor-arg name="street" value="HitechCity"></constructor-arg>
+        </bean>
+
+       so i want to stop manual injection of the dependency so the spring gave us Autowire to get the automatic injection of the dependency... so autowired is used it helps us to stop getting 
+       null if the manual dependency fails so autowired is used 
+       -->
     <!-- 1st byType 
     
     <bean id="st" class="com.Student" autowire="byType">
@@ -31,4 +47,5 @@
     </bean>
     
     
+
 </beans>
