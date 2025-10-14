@@ -5,7 +5,7 @@ public class Student {
 	private int studentId;
 	
 	private String name;
-	
+	@Autowire
 	private Address address;
     
 	public String getName() {
@@ -47,4 +47,5 @@ public class Student {
 		return "Student [studentId=" + studentId + ", name=" + name + "]";
 	}
 }
+
 
