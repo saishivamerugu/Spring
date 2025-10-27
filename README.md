@@ -1,80 +1,137 @@
-# Spring
-# 🌱 Spring Framework Learning Repository 
+# Spring Framework Projects – by Saishiva Merugu
 
-Welcome to the **Spring Framework Master Repository**, where each folder demonstrates a different concept of the **Spring Ecosystem**, starting from the **core container concepts** to **Spring MVC**, **JDBC**, and **ORM integrations** — both **XML-based** and **Annotation-based** configurations.
-
-This repository is designed as a **progressive learning path**, allowing you to build your Spring knowledge step-by-step.
+This repository contains a comprehensive collection of **Spring Framework** modules developed for learning, experimentation, and demonstration purposes. Each folder represents a distinct concept or layer of Spring — from basic dependency injection to advanced ORM and MVC configurations.
 
 ---
 
-## 🧭 **Repository Overview**
-
-| Order | Module Name | Description | Configuration Type |
-|:-----:|:-------------|:-------------|:--------------------|
-| 1️⃣ | **SpringCore** | Basic IoC (Inversion of Control) and DI (Dependency Injection) using XML configuration. | XML |
-| 2️⃣ | **SpringCoreNoXML** | Demonstrates DI and bean management using **Java-based Configuration** (without XML). | Annotation/Java |
-| 3️⃣ | **SpringCoreTwo** | Advanced Spring Core examples — Setter & Constructor Injection, Collections Injection, Bean Lifecycle methods, and Autowiring basics. | XML |
-| 4️⃣ | **SpringPrimaryAnnotation** | Demonstrates use of `@Primary` annotation to handle multiple bean candidates for autowiring. | Annotation |
-| 5️⃣ | **SpringQuantifiers** | Shows how to use `@Qualifier` and `@Primary` annotations together for precise bean injection control. | Annotation |
-| 6️⃣ | **AutoWireInSpring** | Focuses entirely on **Spring Autowiring Techniques** — by name, by type, and constructor. | XML & Annotation |
-| 7️⃣ | **SpringJdbcXml** | Connects Spring with a Database using **Spring JDBC Template** configured with XML. | XML |
-| 8️⃣ | **SpringJdbcNoXml** | Implements the same JDBC Template approach but using **Annotation & Java-based Config** (No XML). | Annotation/Java |
-| 9️⃣ | **SpringORM_XML** | Demonstrates **Spring ORM Integration with Hibernate**, configured using XML. | XML |
-| 🔟 | **SpringOrmNoXml** | Same ORM integration but purely through **Java configuration and annotations**. | Annotation/Java |
-| 1️⃣1️⃣ | **SpringMVC_XML** | Demonstrates **Spring MVC** architecture (Model-View-Controller) configured fully with XML (DispatcherServlet, Controller mappings, etc.). | XML |
-| 1️⃣2️⃣ | **SpringMVC_NoXML** | Implements the same MVC example but using **Annotation-based configuration** (No web.xml, no XML beans). | Annotation/Java |
-
----
-
-## 🧩 **Learning Order and Flow**
-
-To understand Spring from the ground up, follow this order:
-
-1. **SpringCore** → Learn what the **Spring Container** is and how it manages beans via XML.
-2. **SpringCoreTwo** → Deep dive into **Dependency Injection techniques** and bean lifecycle.
-3. **AutoWireInSpring** → Learn how Spring performs **Automatic Dependency Injection**.
-4. **SpringPrimaryAnnotation** → Understand how Spring resolves multiple beans of the same type.
-5. **SpringQuantifiers** → Master **@Qualifier** and **@Primary** usage for precise control.
-6. **SpringCoreNoXML** → Migrate from XML to **pure annotation-based configuration**.
-7. **SpringJdbcXml** → Integrate **Spring JDBC Template** with databases using XML.
-8. **SpringJdbcNoXml** → Move JDBC configuration to annotations and Java-based config.
-9. **SpringORM_XML** → Learn how Spring integrates with **Hibernate ORM** (XML config).
-10. **SpringOrmNoXml** → Do the same ORM setup **without XML**.
-11. **SpringMVC_XML** → Build your first **Spring MVC web application** using XML config.
-12. **SpringMVC_NoXML** → Build the same MVC app using **pure annotations**.
+## 📘 Table of Contents
+1. [Overview](#overview)
+2. [Projects and Descriptions](#projects-and-descriptions)
+   - [SpringCore](#springcore)
+   - [SpringCoreTwo](#springcoretwo)
+   - [SpringCoreNoXML](#springcorenoxml)
+   - [AutoWireInSpring](#autowireinspring)
+   - [SpringPrimaryAnnotation](#springprimaryannotation)
+   - [SpringQuantifiers](#springquantifiers)
+   - [SpringJdbcXml](#springjdbcxml)
+   - [SpringJdbcNoXml](#springjdbcnoxml)
+   - [SpringORM_XML](#springorm_xml)
+   - [SpringOrmNoXml](#springormnoxml)
+   - [SpringMVC_XML](#springmvc_xml)
+   - [SpringMVC_NoXML](#springmvc_noxml)
+3. [How to Run](#how-to-run)
+4. [Technologies Used](#technologies-used)
+5. [Author](#author)
 
 ---
 
-## 🧠 **Concepts Covered**
+## Overview
 
-- ✅ Inversion of Control (IoC)
-- ✅ Dependency Injection (DI)
-- ✅ Bean Lifecycle and Scopes
-- ✅ Autowiring (`@Autowired`, `@Primary`, `@Qualifier`)
-- ✅ XML vs Java-based Configuration
-- ✅ JDBC Template (Spring JDBC)
-- ✅ ORM Integration (Spring + Hibernate)
-- ✅ Spring MVC (Controllers, ViewResolvers, DispatcherServlet)
-- ✅ No-XML Configuration using Annotations
+These projects collectively demonstrate **core Spring concepts** including:
+- Dependency Injection (DI) and Inversion of Control (IoC)
+- Bean configuration with XML and Java-based annotations
+- Autowiring and primary qualifiers
+- Spring JDBC and ORM integration (Hibernate)
+- MVC architecture with XML and annotation-based setups
 
----
-
-## ⚙️ **Technology Stack**
-
-| Category | Tools / Technologies |
-|-----------|----------------------|
-| **Core Framework** | Spring Framework 5+ |
-| **Database Layer** | JDBC, Hibernate ORM |
-| **View Layer (MVC)** | JSP, Spring MVC |
-| **Build Tool** | Maven |
-| **Language** | Java 17+ |
-| **Server** | Apache Tomcat 10+ |
-| **IDE** | Eclipse / IntelliJ IDEA |
+Each folder can be built and run independently using **Maven**.
 
 ---
 
-## 🧾 **How to Run**
+## Projects and Descriptions
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/saishivamerugu/saishivamerugu.git
+### SpringCore
+Introduces the fundamental **Spring Core concepts**:
+- Bean creation and lifecycle management.
+- XML-based configuration of dependencies.
+- Demonstrates how Spring's IoC container handles relationships between objects.
+
+### SpringCoreTwo
+An extension of the Spring Core example focusing on layered configuration:
+- Demonstrates multiple bean scopes (`singleton`, `prototype`).
+- Explains constructor vs. setter injection.
+
+### SpringCoreNoXML
+Implements the same concepts as SpringCore but uses **Java-based configuration** instead of `applicationContext.xml`:
+- Shows how to use `@Configuration`, `@Bean`, and `@ComponentScan`.
+- Simplifies setup by eliminating XML files.
+
+### AutoWireInSpring
+Covers **Spring Autowiring** features:
+- Demonstrates different autowiring modes (`byName`, `byType`, and `constructor`).
+- Explains field-level autowiring using `@Autowired`.
+
+### SpringPrimaryAnnotation
+Highlights the use of `@Primary` to resolve multiple bean conflicts:
+- Shows how the `@Primary` annotation directs Spring to use a specific bean when multiple beans of the same type exist.
+
+### SpringQuantifiers
+Focuses on **Spring Qualifiers**:
+- Uses `@Qualifier` alongside `@Autowired` to specify which bean should be injected when multiple candidates exist.
+- Best practice for precise dependency injection in large applications.
+
+### SpringJdbcXml
+Introduces **Spring JDBC with XML configuration**:
+- Configures `JdbcTemplate` using `applicationContext.xml`.
+- Performs simple CRUD operations through DAO classes.
+
+### SpringJdbcNoXml
+Demonstrates **Spring JDBC without XML**:
+- Java-based configuration using `@Configuration` and `@Bean`.
+- Simplifies setup and promotes cleaner, annotation-driven code.
+
+### SpringORM_XML
+Explains **Spring ORM integration** using **Hibernate** with XML configuration:
+- Includes transaction management and entity mapping.
+- Demonstrates how Spring manages Hibernate `SessionFactory`.
+
+### SpringOrmNoXml
+Provides the ORM setup using **Java-based configuration**:
+- Uses annotations like `@EnableTransactionManagement` and `@PersistenceContext`.
+- Removes XML dependencies for cleaner configuration.
+
+### SpringMVC_XML
+Builds a full **MVC (Model-View-Controller)** application using XML configuration:
+- Demonstrates how to map controllers, configure view resolvers, and handle form submissions.
+- Follows traditional XML-based approach for beginners learning MVC.
+
+### SpringMVC_NoXML
+Presents the same MVC structure as `SpringMVC_XML` but **with annotations only**:
+- Uses `@Controller`, `@RequestMapping`, and `@Configuration`.
+- Incorporates `DispatcherServlet` setup via Java config, aligning with modern Spring Boot-style practices.
+
+---
+
+## How to Run
+
+1. Clone the repository:
+git clone https://github.com/saishivamerugu/your-repo-name.git
+
+text
+2. Open the desired project folder in your IDE (IntelliJ IDEA / Eclipse / Spring Tool Suite).
+3. Build the project using Maven:
+mvn clean install
+
+text
+4. Run the main class (usually `App.java` or `Main.java`), or deploy to a servlet container for MVC modules.
+
+---
+
+## Technologies Used
+
+- **Spring Framework 6**
+- **Java 17+**
+- **Maven** (for build automation)
+- **JDBC / Hibernate**
+- **Servlets & JSP (for MVC modules)**
+- **Annotations-based configuration**
+
+---
+
+## Author
+
+**Saishiva Merugu**  
+Java & Spring Developer  
+Passionate about exploring the Spring ecosystem and simplifying backend development through annotation-driven architectures.
+
+---
