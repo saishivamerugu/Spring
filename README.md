@@ -1,5 +1,5 @@
 # Spring
-# 🌱 Spring Framework Learning Repository — saishivamerugu
+# 🌱 Spring Framework Learning Repository 
 
 Welcome to the **Spring Framework Master Repository**, where each folder demonstrates a different concept of the **Spring Ecosystem**, starting from the **core container concepts** to **Spring MVC**, **JDBC**, and **ORM integrations** — both **XML-based** and **Annotation-based** configurations.
 
