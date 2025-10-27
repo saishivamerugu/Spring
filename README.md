@@ -1,4 +1,4 @@
-# Spring Framework Projects – by Saishiva Merugu
+# Spring Framework 
 
 This repository contains a comprehensive collection of **Spring Framework** modules developed for learning, experimentation, and demonstration purposes. Each folder represents a distinct concept or layer of Spring — from basic dependency injection to advanced ORM and MVC configurations.
 
