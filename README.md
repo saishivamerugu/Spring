@@ -4,7 +4,7 @@ This repository contains a comprehensive collection of **Spring Framework** modu
 
 ---
 
-## 📘 Table of Contents
+## 📘 Table of Contents 
 1. [Overview](#overview)
 2. [Projects and Descriptions](#projects-and-descriptions)
    - [SpringCore](#springcore)
