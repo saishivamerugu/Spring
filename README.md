@@ -105,7 +105,7 @@ Presents the same MVC structure as `SpringMVC_XML` but **with annotations only**
 ## How to Run
 
 1. Clone the repository:
-git clone https://github.com/saishivamerugu/your-repo-name.git
+git clone https://github.com/saishivamerugu/Spring.git
 
 2. Open the desired project folder in your IDE (IntelliJ IDEA / Eclipse / Spring Tool Suite).
 3. Build the project using Maven:
