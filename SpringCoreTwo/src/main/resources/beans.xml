@@ -9,7 +9,7 @@
            http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="emp" class="com.Employee">
-        <property name="empId" value="1"/>
+        <property name="empId" value="1"></property>
         <property name="skills">
             <list>
                 <value>Java</value>
