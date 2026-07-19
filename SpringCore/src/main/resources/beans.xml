@@ -9,7 +9,8 @@
         <property name="studentId" value="1"></property>
         <property name="name" value="sai"></property>
     </bean>
-    
+
+  
      <bean id="stu2" class="com.Student">
      <constructor-arg index="0" value="2"></constructor-arg>
      <constructor-arg index="1" value="India"></constructor-arg>
