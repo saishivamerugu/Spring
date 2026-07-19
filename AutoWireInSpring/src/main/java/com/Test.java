@@ -8,7 +8,6 @@ public class Test {
 	public static void main(String[] args) {
 		ApplicationContext container = new ClassPathXmlApplicationContext("beans.xml");
 		System.out.println("Context Loaded");
-		
 		Student student = container.getBean("st",Student.class);
 		
 		System.out.println(student);
